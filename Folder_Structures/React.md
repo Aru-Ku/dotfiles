@@ -1,23 +1,49 @@
-## React (WIP)
+## React
 
 ```bash
 app-name
-  ├── app
-  │   ├── css
-  │   │   ├── **/*.css
-  │   ├── favicon.ico
-  │   ├── images
-  │   ├── index.html
-  │   ├── js
-  │   │   ├── **/*.js
-  │   └── partials/template
-  ├── dist (or build)
   ├── node_modules
-  ├── bower_components (if using bower)
-  ├── test
-  ├── Gruntfile.js/gulpfile.js
+  ├── build
+  ├── src
+  :   ├── components # FOR GLOBAL COMPONENTS
+  :   ├── <pages/containers>
+  :   :   ├── <page-name/container-name>
+  :   :   :   ├── components
+  :   :   :   :   └── <component-name>
+  :   :   :   :       ├── styles.[css, scss, sass, less, js]
+  :   :   :   :       └── index.[js, jsx, tsx]
+  :   :   :   ├── styles.[css, scss, sass, less, js]
+  :   :   :   └── index.[js, jsx, tsx]
+  :   :   └── index.[js, jsx, tsx]
+  :   ├── styles
+  :   :   ├── styles.[css, scss, sass, less, js]
+  :   :   └── theme.[css, scss, sass, less, js]
+  :   ├── utils
+  :   :   ├── <util-name>.[js, ts]
+  :   :   └── index.[js, ts]
+  :   ├── <types/modals>
+  :   ├── lib
+  :   :   ├── <scrips/lib/apis>.[json, js]
+  :   :   └── index.[js, ts]
+  :   ├── App.[js, jsx, tsx]
+  :   ├── reportWebVitals.js
+  :   ├── service-worker.js
+  :   └── index.[js, jsx, tsx]
+  ├── public
+  :   ├── fonts
+  :   :   └── <font-names>
+  :   :       └── <font-name>.[ttf, woff, otf, woff2]
+  :   ├── images
+  :   :   └── <static-image-name>.[png, jpeg, jpg, gif, svg, webp]
+  :   ├── favicon.ico
+  :   ├── index.html
+  :   ├── logo192.png
+  :   ├── logo512.png
+  :   ├── manifest.json
+  :   ├── sitemap.xml
+  :   └── robots.txt
   ├── README.md
   ├── package.json
-  ├── bower.json (if using bower)
+  ├── package-lock.json OR yarn.lock
   └── .gitignore
 ```
